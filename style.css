@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Train+One&family=Whisper&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: #00412692;
+    /* display: flex; */
+    /* align-items: center; */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+nav .desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .menu{
+    display: none;
+}
+nav .links{
+    display: flex;
+    gap: 1.5rem;
+}
+nav .links a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .CV{
+    padding: .5rem 1.5rem;
+    border: 2px solid #D4BFEC;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center; 
+    gap: .5rem;
+}
+
+nav .CV span{
+    color: white;
+}
+
+
+header{
+    clip-path: circle(76% at 44% 11%);
+    background: #074643;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .texts-btn{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    gap: 3rem;
+}
+header .texts-btn .texts h1{
+    font-family: train one;
+    font-weight: 400;
+}
+header .texts-btn .texts p{
+    font-family: inter;
+    font-weight: 800;
+    font-size: 2rem;
+}
+header .texts-btn .texts span{
+    font-family: inter;
+    font-weight: lighter;
+}
+header .texts-btn .btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .texts-btn .btn button{
+    background: black;
+    color: white;
+    padding: .4rem .7rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+header .texts-btn .btn .txt{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+header .texts-btn .btn .txt span{
+    font-family: inter;
+    font-weight: 700;
+}
+
+header .images{
+    /* position: relative; */
+    padding: 1.5rem;
+}
+
+header .images img{
+    width: 500px;
+}
+
+header .images .wht{
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 65%;
+    right: 45%;
+    padding: .5rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+}
+header .images .wht #head{
+    font-weight: 900;
+    font-size: 2rem;
+}
+header .images .wht #sp{
+    font-weight: 700;
+}
+
+
+/* @media only screen and(max-width: 460px) {
+    body{
+        background-color: red;
+    }
+} */
+/* 
+@media only screen and (max-width: 460px){
+    body{
+        background: red;;
+    }
+} */
+
+@media only screen and (max-width: 460px){
+    nav{
+        padding: .5rem;
+    }
+    nav .desktop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    nav .desktop .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .menu{
+        width: 30px;
+        display: block;
+        padding: 1rem;
+    }
+    nav .close{
+        display: none;
+    }
+    nav .desktop{
+        display: none;
+    }
+    nav .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .CV{
+        justify-content: center;
+    }
+}
